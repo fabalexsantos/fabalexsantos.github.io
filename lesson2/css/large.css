@@ -1,0 +1,14 @@
+@media only screen and (min-width:1028px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .align {
+        grid-column: span 1;
+    }
+
+    .last-text {
+        max-width: 100%;
+    }
+    
+}
