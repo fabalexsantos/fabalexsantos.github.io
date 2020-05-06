@@ -45,7 +45,7 @@ nav ul li a:hover {
     background-color: blue;
 }
 nav ul li.active a {
-    background-color: blue;
+    background-color: lightblue;
     color: #fff;
 }
 /*----------- MAIN --------------*/
