@@ -132,4 +132,8 @@
   .address {
     flex: 1.5;
   }
+
+  .showme {
+    font-size: 1.5em;
+  }
 } /*end medium */
