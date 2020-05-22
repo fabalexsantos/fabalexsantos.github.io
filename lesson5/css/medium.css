@@ -111,10 +111,7 @@
     float: right;
     max-width: 300px;
     margin: 0 0 0 15px;
-  }
-  .article p {
-    text-align: justify;
-  }
+  
 
   .contact {
     display: flex;
