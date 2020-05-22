@@ -198,10 +198,6 @@ p {
   margin: 25px auto;
 }
 
-.article p {
-  text-align: justify;
-}
-
 /*----- Contact -----*/
 .address {
   display: flex;
