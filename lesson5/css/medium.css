@@ -119,11 +119,7 @@
 
   .map {
     flex: 1;
-  }
-
-  .map img {
-    width: 100%;
-    margin: 0;
+    margin-bottom: 30px;
   }
 
   .address {

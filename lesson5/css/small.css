@@ -215,9 +215,8 @@ p {
 
 }
 
-.map img {
-  width: 100%;
-  margin: 25px auto;
+.map {
+    margin-bottom: 15px;
 }
 
 /*----------- FOOTER --------------*/
