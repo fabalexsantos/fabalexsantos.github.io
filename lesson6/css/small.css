@@ -217,6 +217,11 @@ p {
 
 .map {
     margin-bottom: 15px;
+    display: flex;
+}
+
+.map iframe{
+      flex: 1;
 }
 
 /*----------- FOOTER --------------*/
