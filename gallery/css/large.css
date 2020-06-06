@@ -1,0 +1,38 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+
+  nav ul li a {
+    padding: 0.8rem 1.4rem;
+  }
+
+  header img {
+    max-width: 180px;
+  }
+
+  .stats {
+    padding: 1.5rem;
+  }
+
+  .article .image {
+    max-width: 320px;
+  }
+
+  /*----------------------- Gallery --------------------*/
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div.gallery:hover {
+
+    box-shadow: 6px 6px 18px #1d3557;
+  }
+
+
+} /*end large */
