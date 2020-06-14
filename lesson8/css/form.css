@@ -46,7 +46,7 @@ form label.up input, form label.up select {
     color: #1d3557;
     width: 100%;
     max-width: 20rem;
-    background-color: whitesmoke(0,0,0,0.5);
+    background-color: whitesmoke;
 }
 
 form label.select {
