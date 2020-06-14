@@ -35,7 +35,7 @@ td {
   border-collapse: collapse;
 }
 
-th {
+thead td{
   font-weight: bold;
   font-size: 2.4rem;
   background-color: #7fb9c2;
