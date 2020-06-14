@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabrício Santos" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Storm Center - Weather and Sports</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+
+    <!-- STYLE SHEETS -->
+    <!-- enhance-desktop -->
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+      <header>
+        <picture>
+          <img src="./images/logo.png" alt="Weather and Sports Logo" />
+        </picture>
+        <section class="headings">
+          <h1>Sports and Weather</h1>
+          <h2 class="m">Your game on the sunniest day</h2>
+        </section>
+      </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div id="NavWrapper">
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="#">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+
+    <main>
+      <h1 class="title">Storm Center Form</h1>
+
+      <form method="get" action="thanks.html">
+        <fieldset>
+          <legend>Your Personal Info</legend>
+
+          <label class="up"
+            >Your Name*
+            <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required
+          /></label>
+
+          <label class="up"
+            >Email*
+            <input
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+          /></label>
+
+          <label class="up"
+            >Phone*
+            <input type="tel" name="phone" placeholder="99999999" required
+          /></label>
+
+          <label class="up"
+            >Zip Code* <input type="number" name="zip" required
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storm Info</legend>
+
+          <div>Date</div>
+          <label class="select"
+            ><input type="date" name="date" value="2020-06-13"
+          /></label>
+
+          <label class="up"
+            >Type
+            <select name="type">
+              <option value="" selected disabled>Please Select</option>
+              <option value="flash flood">Flash Flood</option>
+              <option value="hail">Hail</option>
+              <option value="hurricane">Hurricane</option>
+              <option value="thunderstorm">Thunderstorm</option>
+              <option value="tornado">Tornado</option>
+            </select>
+          </label>
+
+          <div>Rating</div>
+
+          <label class="flexly" for="rating">
+
+            <input
+              type="range"
+              id="rating"
+              value="5"
+              min="1"
+              max="10"
+              step="1"
+              list="tickmarks"
+              oninput="adjustRting(this.value)"
+              onchange="adjustRating(this.value)"
+            />
+            <span id="ratingvalue">5</span>
+          </label>
+
+          <datalist id="tickmarks">
+            <option value="0"> </option>
+            <option value="1"> </option>
+            <option value="2"> </option>
+            <option value="3"> </option>
+            <option value="4"> </option>
+            <option value="5"> </option>
+            <option value="6"> </option>
+            <option value="7"> </option>
+            <option value="8"> </option>
+            <option value="9"> </option>
+            <option value="10"> </option>
+          </datalist>
+
+          <label class="up"
+            >Region
+            <select name="type">
+              <option value="" selected disabled>Select Region</option>
+              <option value="preston">Preston</option>
+              <option value="soda springs">Soda Springs</option>
+              <option value="fist haven">Fish Haven</option>
+            </select>
+          </label>
+
+          <div>Danger Level</div>
+
+          <label class="select"
+            ><input type="radio" name="danger" value="yes" /> Yes</label
+          >
+          <label class="select"
+            ><input type="radio" name="danger" value="maybe" /> Maybe</label
+          >
+          <label class="select"
+            ><input type="radio" name="danger" value="no" /> No</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+
+          <label class="up">Your Comments</label>
+          <textarea id="up" rows="5" cols="38"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Send your report" class="submitBtn" />
+      </form>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div id="FooterWrapper">
+      <footer>
+        <p>&bull; Fabrício Santos &bull; <span id="currentDate"></span></p>
+      </footer>
+    </div>
+    <script src="./js/rating.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ['Monda', 'Montserrat'] } });
+    </script>
+  </body>
+</html>

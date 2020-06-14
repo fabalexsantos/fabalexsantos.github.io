@@ -1,0 +1,148 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 45.7rem) {
+  header img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .stats {
+    padding: 1rem;
+  }
+
+  .headings h1 {
+    font-size: 2.6rem;
+  }
+
+  .m {
+    letter-spacing: 1.5pt;
+    font-size: larger;
+    margin-left: 17px;
+  }
+
+  div#NavWrapper {
+    background: #1d3557; /* Old browsers */
+    background: -moz-linear-gradient(
+      45deg,
+      #1d3557 0%,
+      #1898cb 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      45deg,
+      #1d3557 0%,
+      #1898cb 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      45deg,
+      #1d3557 0%,
+      #1898cb 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d3557', endColorstr='#1898cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+
+  nav button {
+    display: none;
+  }
+
+  nav ul.hide {
+    display: block;
+  }
+
+  nav ul {
+    margin-left: 2%;
+  }
+
+  nav ul li {
+    float: left;
+  }
+
+  nav ul li a {
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 1rem;
+  }
+
+  .dayforecast {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 40px 0;
+  }
+
+  .first {
+    border-left: 1px solid #1d3557;
+  }
+  .noshow {
+    display: block;
+  }
+  .day {
+    border-right: 1px solid #1d3557;
+    border-bottom: 1px solid #1d3557;
+    border-top: 1px solid #1d3557;
+    margin: auto;
+    text-align: center;
+    flex: 1;
+  }
+
+  .day img {
+    width: 2rem;
+    margin: 0.5rem;
+  }
+
+  .day h3 {
+    border-bottom: 1px solid #1d3557;
+    margin: 0;
+    padding: 10px 0;
+    background-color: whitesmoke;
+  }
+
+  .day p {
+    padding-bottom: 8px;
+  }
+
+  .imagecell {
+    display: none;
+  }
+
+  .article {
+    overflow: hidden;
+  }
+
+  .article .image {
+    display: block;
+    float: right;
+    max-width: 300px;
+    margin: 0 0 0 15px;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .map {
+    flex: 1;
+    margin-bottom: 30px;
+  }
+
+  .address {
+    flex: 1.5;
+  }
+
+  .showme {
+    font-size: 1.5em;
+  }
+
+  /*----------------------- Gallery --------------------*/
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+
+  div.gallery {
+  border-radius: 5px 100px 5px 5px;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+}
+
+} /*end medium */
