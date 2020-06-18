@@ -1,0 +1,94 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 1000px;
+  margin: 50px 2%;
+  background-color: rgb(192, 208, 238);
+}
+
+.container {
+  padding: 50px;
+  margin: 50px auto;
+  background-image: url(../image/1.jpg);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 5px;
+  margin: 0 0 5px 0;
+}
+
+p {
+  padding: 5px;
+  margin: 0;
+}
+
+.cards div {
+  border-radius: 7%;
+  background-color: rgba(206, 207, 212, 0.8);
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0px 0px 20px;
+  padding: 40px;
+}
+
+.cards div img {
+  width: 100%;
+  max-width: 270px;
+  max-height: 330px;
+  box-shadow: 0 0 20px;
+  border: 2px solid rgb(127, 165, 235);
+  border-radius: 15%;
+  padding: 6px;
+  margin-bottom: 40px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 700px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .cards div {
+    margin: 10px;
+    box-shadow: 0px 0px 20px;
+    padding: 10px;
+    flex-grow: 1;
+  }
+}
+
+
+@media only screen and (min-width: 900px) {
+  body {
+    max-width: 1300px;
+  }
+  
+  .cards div {
+    width: 220px;
+  }
+
+  .cards div img {
+    max-width: 200px;
+    max-height: 250px;
+    margin-bottom: 0;
+  }
+
+}
