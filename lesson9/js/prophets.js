@@ -26,6 +26,11 @@ prophetsArray = (prophets) => {
     p2.innerHTML =
       '<strong>' + 'Place of Birth: ' + '</strong>' + prophet.birthplace;
     image.setAttribute('src', prophet.imageurl);
+    image.setAttribute(
+      'alt',
+      prophet.name + " " + prophet.lastname + '-' + prophet.order
+    );
+
 
     card.appendChild(h2);
         card.appendChild(h2b);
