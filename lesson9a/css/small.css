@@ -1,0 +1,306 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+  background-color: #f1faee;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*----------- Message --------------*/
+.showme {
+  display: block;
+  background-color: #e63946;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+  background-color: whitesmoke;
+}
+header {
+  display: flex;
+  padding: 0 2%;
+  min-width: 10rem;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+  padding: 10px 0;
+}
+
+.title {
+  color: #e63946;
+  font-family: Monda;
+  font-weight: 700;
+  padding: 10px 0;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.headings h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0 17px;
+}
+
+.m {
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1pt;
+  color: #e63946;
+  margin-left: 20px;
+  font-size: 0.9rem;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  color: #1d3557;
+  font-family: Monda;
+}
+header h2 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #457b9d;
+  font-family: Monda;
+}
+
+h3,
+h4 {
+  color: #457b9d;
+  font-family: Monda;
+  font-size: 1.5rem;
+}
+
+.title {
+  color: #e63946;
+  font-family: Monda;
+  font-weight: 700;
+}
+
+/*----------- NAVIGATION --------------*/
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+div#NavWrapper {
+  background-color: #1d3557;
+}
+
+nav {
+  font-family: Verdana, sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+  background-color: rgb(230, 57, 70, 0.8);
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*----------- MAIN --------------*/
+main {
+  padding: 0 2%;
+  min-height: 10rem;
+}
+main h1 {
+  color: #457b9d;
+}
+
+/*----------- Hero Image / Stats --------------*/
+
+.herodiv {
+  margin: 10px auto;
+  position: relative;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.heroimage img {
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+
+.hide {
+  display: none;
+}
+.stats {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  background: radial-gradient(#eee, #1898cb);
+  border: 0.4px solid #e63946;
+  padding: 0.7rem;
+  box-shadow: 0 0 10px #e63946;
+  opacity: 0.8;
+}
+.stats h2 {
+  text-align: center;
+  color: #e63946;
+  margin: 7px;
+}
+.noshow {
+  display: none;
+}
+/*----------- Article --------------*/
+
+.article .image {
+  display: none;
+}
+
+.imagecell {
+  width: 100%;
+  display: block;
+  margin: 25px auto;
+}
+
+/*----- Contact -----*/
+.address {
+  display: flex;
+}
+
+.adress p,
+h3 {
+  margin: 0;
+}
+.phone_email,
+.addcontent {
+  flex: 1;
+}
+
+.addcontent p,
+.phone_email p {
+  margin: 15px auto;
+}
+
+.map {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.map iframe {
+  flex: 1;
+}
+
+/*----------------------- Gallery --------------------*/
+.grid-container {
+  margin: 25px auto;
+}
+
+div.gallery {
+  border-radius: 5px 100px 5px 5px;
+  text-align: center;
+  background-color: white;
+  margin: 25px auto;
+  padding: 10px;
+}
+
+div.gallery p {
+  padding: 10px;
+}
+
+div.gallery img {
+  border-radius: 5px 100px;
+  width: 100%;
+}
+
+/*----------------------- Towns --------------------*/
+.towns section {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.towns h2 {
+  color: #e63946;
+  font-family: Monda;
+  font-weight: 500;
+  padding: 10px 0 0 0;
+}
+
+.towns img {
+  align-self: center;
+  padding: 0.25em;
+  margin: 2px 0 40px 0;
+  box-shadow: 0 0 10px #457b9d;
+  border: 3px solid #457b9d;
+  border-radius: 25%;
+}
+
+/*----------- FOOTER --------------*/
+div#FooterWrapper {
+  background-color: #1d3557;
+}
+footer {
+  padding: 0.5rem 2%;
+  text-align: center;
+  color: #f1faee;
+}
+
+footer a:link {
+  color: #f1faee;
+}
+footer a:visited {
+  color: #f1faee;
+}
+/* mouse over link */
+footer a:hover {
+  font-weight: bold;
+  color: #457b9d;
+}
+
+.dayforecast {
+  display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
