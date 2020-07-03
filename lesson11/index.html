@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="Fabrício Santos" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Welcome - Weather and Sports</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link href="css/normalize.css" rel="stylesheet" />
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+      <header>
+        <picture>
+          <img src="./images/logo.png" alt="Weather and Sports Logo" />
+        </picture>
+        <section class="headings">
+          <h1>Sports and Weather</h1>
+          <h2 class="m">Your game on the sunniest day</h2>
+        </section>
+      </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div id="NavWrapper">
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="preston.html">Preston</a></li>
+          <li><a href="sodasprings.html">Soda Springs</a></li>
+          <li><a href="fishhaven.html">Fish Haven</a></li>
+          <li><a href="stormcenter.html">Storm Center</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+
+    <main>
+      <br />
+      <h1 class="title">How is the weather in your town?</h1>
+      <p>Enjoy your day and find out the best day for your game!</p>
+      <div class="towns"></div>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div id="FooterWrapper">
+      <footer>
+        <p>&bull; Fabrício Santos &bull; <span id="currentDate"></span></p>
+        <p>Data from <a href="https://openweathermap.org/">Open Weather</a></p>
+      </footer>
+    </div>
+    <script src="./js/lazyloading.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ['Monda', 'Montserrat'] } });
+    </script>
+  </body>
+</html>
