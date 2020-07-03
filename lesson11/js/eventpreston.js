@@ -1,5 +1,5 @@
 //Start of the Events Cards
-const requestURL = 'https://fabalexsantos.github.io/lesson11/js/data.json';
+const requestURL = 'https://dhinbest.github.io/lesson9/home/home.json';
 
 fetch(requestURL)
   .then(function (response) {
