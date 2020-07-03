@@ -49,7 +49,7 @@ const weekDay = [
 ];
 
 const apiURL2 =
-  'api.openweathermap.org/data/2.5/forecast?id=5604473&appid=79c66cddcbc0ca13f6645125edf877d6&units=imperial';
+  '//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=79c66cddcbc0ca13f6645125edf877d6&units=imperial';
 
 fetch(apiURL2)
   .then((response) => response.json())
