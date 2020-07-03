@@ -147,7 +147,7 @@
   }
 
   .towns img {
-    max-width: 100%;
+    max-width: 40%;
   }
   section div {
     align-self: center;
@@ -156,7 +156,7 @@
   }
 
   .towns h3, h2 {
-    height: 80px;
+    height: 45px;
     margin: 2px;
 
   }

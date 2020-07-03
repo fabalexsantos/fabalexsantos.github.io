@@ -44,13 +44,20 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
+    background-color: #c3d7f3;
+    margin: 10px;
+    border-radius: 2% 2% 25% 25%;
   }
 
   .towns h3 {
-  vertical-align: middle;
-}
+    vertical-align: middle;
+    font-size: 1.2rem;
+  }
 
   .towns img {
+    max-width: 100%;
     width: 280px;
+    border: 0;  
+    box-shadow: 0 0 0;
   }
 } /*end large */

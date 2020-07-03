@@ -188,8 +188,16 @@ p {
 }
 /*----------- Article --------------*/
 
+.article {
+  background-color: #c9e3f3;
+}
+
 .article .image {
   display: none;
+}
+
+.article p {
+  text-align: left;
 }
 
 .imagecell {
@@ -255,6 +263,9 @@ div.gallery img {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin: 45px;
+  background-color: #c3d7f3;
+  border-radius: 2%;
 }
 
 .towns h2 {
@@ -262,12 +273,19 @@ div.gallery img {
   font-family: Monda;
   font-weight: 500;
   padding: 10px 0 0 0;
+  margin: 10px;
+}
+
+.towns h3 {
+  margin: 10px;
+}
+
+.towns p {
+  margin: 5px;
 }
 
 .towns img {
   align-self: center;
-  padding: 0.25em;
-  margin: 2px 0 40px 0;
   box-shadow: 0 0 10px #457b9d;
   border: 3px solid #457b9d;
   border-radius: 25%;
@@ -302,13 +320,13 @@ footer a:hover {
 #event section {
   padding: 20px;
   background-color: #1898cb;
-  display: flex;
   align-content: center;
   box-shadow: 10px 10px 10px #1d395b;
   margin-bottom: 25px;
 }
 
 #event div {
+  text-align: center;
   background-color: #1d395b;
   padding: 30px;
 }
