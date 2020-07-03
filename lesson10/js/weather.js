@@ -1,6 +1,6 @@
 //ADD the key and change units to imperial
 const apiURL =
-  'http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=79c66cddcbc0ca13f6645125edf877d6&units=imperial';
+  '//api.openweathermap.org/data/2.5/weather?id=5604473&appid=79c66cddcbc0ca13f6645125edf877d6&units=imperial';
 
 //Go fetch it and then wait for a response.
 fetch(apiURL)
