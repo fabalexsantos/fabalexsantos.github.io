@@ -224,6 +224,7 @@ h3 {
 
 .map iframe {
   flex: 1;
+  border: 1px solid black;
 }
 
 /*----------------------- Gallery --------------------*/
@@ -296,6 +297,32 @@ footer a:hover {
 
 .dayforecast {
   display: none;
+}
+
+#event section {
+  padding: 20px;
+  background-color: #1898cb;
+  display: flex;
+  align-content: center;
+  box-shadow: 10px 10px 10px #1d395b;
+  margin-bottom: 25px;
+}
+
+#event div {
+  background-color: #1d395b;
+  padding: 30px;
+}
+
+#event p {
+  color: whitesmoke;
+  padding: 0;
+  margin: 0;
+}
+
+#event h2 {
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
